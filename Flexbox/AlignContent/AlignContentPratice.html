@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/colorsClass.css">
+    <title>Align Content Pratice</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid red;
+            border-radius: 6px;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border:solid 2px blueviolet;
+            border-radius: 6px;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-arround{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+    <body>
+        <h2>Row</h2>
+        <h3>Stretch</h3>
+        <section class="container stretch">
+            <div class="item">Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent.</div>
+            <div class="item">Nec orci ornare consequat. Praesent lacinia ultrices consectetur. </div>
+            <div class="item">Delegadis gente finis, bibendum egestas augue arcu ut est.</div>
+            <div class="item">Atirei o pau no gatis, per gatis num morreus.Leite de capivaris, leite de mula manquis sem cabeça.</div>
+            <div class="item">Aenean aliquam molestie leo, vitae iaculis nisl.</div>
+            <div class="item">Quem manda na minha terra sou euzis!Praesent malesuada urna nisi</div>
+            <div class="item">Quem manda na minha terra sou euzis!</div>
+        </section>
+
+        <h3>Center</h3>
+        <section class="container center">
+            <div class="item">Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent.</div>
+            <div class="item">Nec orci ornare consequat. Praesent lacinia ultrices consectetur. </div>
+            <div class="item">Delegadis gente finis, bibendum egestas augue arcu ut est.</div>
+            <div class="item">Atirei o pau no gatis, per gatis num morreus.Leite de capivaris, leite de mula manquis sem cabeça.</div>
+            <div class="item">Aenean aliquam molestie leo, vitae iaculis nisl.</div>
+            <div class="item">Quem manda na minha terra sou euzis!Praesent malesuada urna nisi</div>
+            <div class="item">Quem manda na minha terra sou euzis!</div>
+        </section>
+
+        <h3>flex-start</h3>
+        <section class="container flex-start">
+            <div class="item">Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent.</div>
+            <div class="item">Nec orci ornare consequat. Praesent lacinia ultrices consectetur. </div>
+            <div class="item">Delegadis gente finis, bibendum egestas augue arcu ut est.</div>
+            <div class="item">Atirei o pau no gatis, per gatis num morreus.Leite de capivaris, leite de mula manquis sem cabeça.</div>
+            <div class="item">Aenean aliquam molestie leo, vitae iaculis nisl.</div>
+            <div class="item">Quem manda na minha terra sou euzis!Praesent malesuada urna nisi</div>
+            <div class="item">Quem manda na minha terra sou euzis!</div>
+        </section>
+
+        <h3>flex-end</h3>
+        <section class="container flex-end">
+            <div class="item">Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent.</div>
+            <div class="item">Nec orci ornare consequat. Praesent lacinia ultrices consectetur. </div>
+            <div class="item">Delegadis gente finis, bibendum egestas augue arcu ut est.</div>
+            <div class="item">Atirei o pau no gatis, per gatis num morreus.Leite de capivaris, leite de mula manquis sem cabeça.</div>
+            <div class="item">Aenean aliquam molestie leo, vitae iaculis nisl.</div>
+            <div class="item">Quem manda na minha terra sou euzis!Praesent malesuada urna nisi</div>
+            <div class="item">Quem manda na minha terra sou euzis!</div>
+        </section>
+
+        <h3>space-arround</h3>
+        <section class="container space-arround">
+            <div class="item">Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent.</div>
+            <div class="item">Nec orci ornare consequat. Praesent lacinia ultrices consectetur. </div>
+            <div class="item">Delegadis gente finis, bibendum egestas augue arcu ut est.</div>
+            <div class="item">Atirei o pau no gatis, per gatis num morreus.Leite de capivaris, leite de mula manquis sem cabeça.</div>
+            <div class="item">Aenean aliquam molestie leo, vitae iaculis nisl.</div>
+            <div class="item">Quem manda na minha terra sou euzis!Praesent malesuada urna nisi</div>
+            <div class="item">Quem manda na minha terra sou euzis!</div>
+        </section>
+
+        <h3>space-between</h3>
+        <section class="container space-between">
+            <div class="item">Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent.</div>
+            <div class="item">Nec orci ornare consequat. Praesent lacinia ultrices consectetur. </div>
+            <div class="item">Delegadis gente finis, bibendum egestas augue arcu ut est.</div>
+            <div class="item">Atirei o pau no gatis, per gatis num morreus.Leite de capivaris, leite de mula manquis sem cabeça.</div>
+            <div class="item">Aenean aliquam molestie leo, vitae iaculis nisl.</div>
+            <div class="item">Quem manda na minha terra sou euzis!Praesent malesuada urna nisi</div>
+            <div class="item">Quem manda na minha terra sou euzis!</div>
+        </section>
+    </body>
+</html>
