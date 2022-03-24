@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Atividade 01 de FlexBox">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 01</title>
+        <style>
+            .flex-container{ 
+                margin:0px;
+                padding:0px;
+                display:flex;
+                list-style:none;
+            }
+            .flex-itens{
+                background-color: blue;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border-radius: 0.2rem;
+                height: 50px;
+                width:50px;
+                line-height: 50px;
+                font-size: 50px;
+                color:white;
+                text-align: center;
+                margin: 5px !important;
+            }
+            .row{
+                flex-direction: row;
+            }
+            .row-reverse{
+                float: left;
+                flex-direction: row-reverse;
+            }
+            .row-reverse li{
+                background-color: red;
+            }
+            .column{
+                float: left;
+                flex-direction: column;
+            }
+            .column li{
+            background-color: maroon;
+            }
+            .column-reverse{
+                float: right;
+                flex-direction: column-reverse;
+            }
+            .column-reverse li{
+                background-color: blueviolet;
+            }
+            </style>
+    </head>
+    <body>
+        <ul class="flex-container row">
+            <li class="flex-itens">1</li>
+            <li class="flex-itens">2</li>
+            <li class="flex-itens">3</li>
+            <li class="flex-itens">4</li>
+            <li class="flex-itens">5</li>
+        </ul>
+
+        <ul class="flex-container row-reverse">
+            <li class="flex-itens">1</li>
+            <li class="flex-itens">2</li>
+            <li class="flex-itens">3</li>
+            <li class="flex-itens">4</li>
+            <li class="flex-itens">5</li>
+        </ul>
+
+        <ul class="flex-container column">
+            <li class="flex-itens">1</li>
+            <li class="flex-itens">2</li>
+            <li class="flex-itens">3</li>
+            <li class="flex-itens">4</li>
+            <li class="flex-itens">5</li>
+        </ul>
+
+        <ul class="flex-container column-reverse">
+            <li class="flex-itens">1</li>
+            <li class="flex-itens">2</li>
+            <li class="flex-itens">3</li>
+            <li class="flex-itens">4</li>
+            <li class="flex-itens">5</li>
+        </ul>
+        
+    </body>
+</html>
