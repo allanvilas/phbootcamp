@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundamentos - Order</title>
+        <style>
+            .container{
+                display: flex;
+                max-width: 400px;
+                border: 2px solid red;
+                border-radius: 6px;
+                margin-bottom: 20px;
+            }
+            .item{
+                flex: 1;
+                background-color: brown;
+                border-radius: 3px;
+                color: white;
+                text-align: center;
+                font-size: 24px;
+                margin: 5px;
+                padding: 5px;
+                order: 0;
+            }
+            .order-01{
+                order: 1;
+            }
+            .order-02{
+                order: 2;
+            }
+            .order-03{
+                order: 3;
+            }
+            .order-04{
+                order: 4;
+            }
+            .order-05{
+                order: 5;
+            }
+            .direction{
+                flex-direction: column;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>Row</h2>
+        <h3>Order 0</h3>
+        <section class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <h3>Order diferentes</h3>
+        <section class="container">
+            <div class="item order-05">1</div>
+            <div class="item order-04">2</div>
+            <div class="item order-03">3</div>
+            <div class="item order-02">4</div>
+            <div class="item order-01">5</div>
+        </section>
+
+        <h2>Column</h2>
+        <h3>Order 0</h3>
+        <section class="container direction">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+
+        <h3>Order diferentes</h3>
+        <section class="container direction">
+            <div class="item order-05">1</div>
+            <div class="item order-04">2</div>
+            <div class="item order-03">3</div>
+            <div class="item order-02">4</div>
+            <div class="item order-01">5</div>
+        </section>
+    </body>
+</html>
