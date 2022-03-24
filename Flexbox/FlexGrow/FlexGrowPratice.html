@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/colorsClass.css">
+    <title>Flex Grow Pratica</title>
+    <style>
+        .container{
+            display: flex;
+            border:solid 2px red;
+            border-radius: 6px;
+            max-width: 300px;
+            justify-content: center;
+        }
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding:5px;
+            border-radius: 3px;
+            border:solid 2px blueviolet;
+            text-align: center;
+            color: white;
+        }
+        .flex-grow{
+            flex-grow: 0;
+        }
+        .flex-grow-1{
+            flex-grow: 1;
+        }
+        .flex-grow-2{
+            flex-grow: 2;
+        }
+        .flex-grow-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+    <body>
+        <h2>Row</h2>
+        <h2>Flex-Grow-00</h2>
+        <section class="container">
+            <div class="item flex-grow">A</div>
+            <div class="item flex-grow">B</div>
+            <div class="item flex-grow">C</div>
+            <div class="item flex-grow">D</div>
+        </section>
+        <h2>Flex-Grow-01</h2>
+        <section class="container">
+            <div class="item flex-grow-1">A</div>
+            <div class="item flex-grow-2">B</div>
+            <div class="item flex-grow-1">C</div>
+            <div class="item flex-grow-3">D</div>
+        </section>
+        <h2>Flex-Grow-02</h2>
+        <section class="container">
+            <div class="item flex-grow-2">A</div>
+            <div class="item flex-grow-1">B</div>
+            <div class="item flex-grow-2">C</div>
+            <div class="item flex-grow">D</div>
+        </section>
+    </body>
+</html>
